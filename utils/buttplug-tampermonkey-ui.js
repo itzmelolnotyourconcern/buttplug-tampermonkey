@@ -285,9 +285,9 @@ window.addEventListener("load", function (e) {
 
                connect_intiface_button.addEventListener("click", async (event) => {
                  const connector = new Buttplug.ButtplugBrowserWebsocketClientConnector("ws://localhost:12345/");
-                 await buttplug_client.Connect(connector);
-                 console.log(connector);
                  console.log(buttplug_client);
+                 console.log(connector);
+                 await buttplug_client.Connect(connector);
                  connector_div.style.display = "none";
                  enumeration_div.style.display = "block";
                }, false);
